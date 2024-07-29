@@ -17,7 +17,7 @@ const VideoCard = (props: Props) => {
   } = props;
   return (
     <div>
-      <Image className='rounded-xl' src={thumbnailImage} alt='Thumbnail' />
+      <Image className='rounded-xl' src={thumbnailImage} alt='Thumbnail' height={100} width={100} />
 
       <div className='grid grid-cols-12 mt-2'>
         <div className='col-span-2'>
