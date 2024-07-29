@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 interface Props {
   video: {
     thumbnailImage: string;
@@ -15,11 +17,11 @@ const VideoCard = (props: Props) => {
   } = props;
   return (
     <div>
-      <img className='rounded-xl' src={thumbnailImage} alt='Thumbnail' />
+      <Image className='rounded-xl' src={thumbnailImage} alt='Thumbnail' />
 
       <div className='grid grid-cols-12 mt-2'>
         <div className='col-span-2'>
-          <img className='rounded-full w-10 h-10' src={channelLogo} alt='Thumbnail' />
+          <Image className='rounded-full w-10 h-10' src={channelLogo} alt='Thumbnail' />
         </div>
 
         <div className='col-span-10 pl-2'>
